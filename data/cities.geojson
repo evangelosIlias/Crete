@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "cities",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "fid": 44.0, "ONOMA": "ÇñÜêëåéï", "NAME": "Herakleio" }, "geometry": { "type": "Point", "coordinates": [ 25.131309775605448, 35.338684997073187 ] } },
+{ "type": "Feature", "properties": { "fid": 45.0, "ONOMA": "¶ãéïò Íéêüëáïò", "NAME": "Agios Nikolaos" }, "geometry": { "type": "Point", "coordinates": [ 25.716137398247014, 35.189971246777297 ] } },
+{ "type": "Feature", "properties": { "fid": 46.0, "ONOMA": "ÑÝèõìíï", "NAME": "Rethimno" }, "geometry": { "type": "Point", "coordinates": [ 24.474609551117005, 35.368068608497843 ] } },
+{ "type": "Feature", "properties": { "fid": 47.0, "ONOMA": "×áíéÜ", "NAME": "Chania" }, "geometry": { "type": "Point", "coordinates": [ 24.019036663073784, 35.516224600534379 ] } }
+]
+}

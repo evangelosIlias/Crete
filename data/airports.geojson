@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "airports",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Id": "1", "Name": "Heraklion Airport" }, "geometry": { "type": "Point", "coordinates": [ 25.180083582899687, 35.339581510592105 ] } },
+{ "type": "Feature", "properties": { "Id": "2", "Name": "Kasteli Airport" }, "geometry": { "type": "Point", "coordinates": [ 25.327208177509135, 35.192259265395435 ] } },
+{ "type": "Feature", "properties": { "Id": "3", "Name": "Sitia Airport" }, "geometry": { "type": "Point", "coordinates": [ 26.100479626526088, 35.215880001042919 ] } },
+{ "type": "Feature", "properties": { "Id": "4", "Name": "Tumpaki Airport" }, "geometry": { "type": "Point", "coordinates": [ 24.75068704056217, 35.06844851108297 ] } },
+{ "type": "Feature", "properties": { "Id": "5", "Name": "Chania Airport" }, "geometry": { "type": "Point", "coordinates": [ 24.143881872905087, 35.534228732439395 ] } },
+{ "type": "Feature", "properties": { "Id": "6", "Name": "Maleme Airport" }, "geometry": { "type": "Point", "coordinates": [ 23.831120310067625, 35.531341716704539 ] } }
+]
+}

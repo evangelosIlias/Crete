@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Welcome to my first web site </title>
+
+    <script src="openlayers/ol.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script src="ol-layerswitcher/ol-layerswitcher.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="openlayers/ol.css" type="text/css">
+    <link rel="stylesheet" href="ol-layerswitcher/ol-layerswitcher.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" class="logo" alt="logo"></a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-text">Discover hidden treasures</div> 
+                    <ul class= "navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Visitnow.html">Visit Now</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Gallery.html">Gallery</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Map.html">Map</a></li>
+                        <li class="nav-item">
+                        </ul>
+                        </div>
+                    </div>
+                </nav>
+                <body onload = "initMap();">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                            <div class="title9">
+                                <h1> The map of Greece</h1>
+                                <p>In this map, you will find places of interest related to Crete. Look for the locations on the map by adding and removing layers from the blue selector on your right.</p>      
+                                </div>   
+                            </div>   
+                        <div class="col-md-8">
+                    <div id="mymap"> 
+                      </div>
+                        </div>
+                          </div>  
+                            </div>
+                               <div class="col-md-12" id="legend">    
+                                 </div>
+                        <footer>
+                    <div class="container-fluid">
+                <div class="row"> 
+            <div class="col-md-4">
+        <div class="column1">
+    <h6>About Us</h6>
+        <div class="content">           
+            <p7>Our island and it's hospitable inhabitants wish you a nice stay in the cradle of European culture.
+                For all you who coming first time - but for all of you who visit regularly in order to discover the
+                countless hidden beauties of Crete we would like to wish you the best experience, unforgettable stay,
+                enjoy the sun and live your own magic journey</p7>
+                </div></div>      
+                    <div class="social-media">  
+                        <ul>
+                            <li><a href="https://www.facebook.com/NataliSuportman/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/natalisuportman/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCcV3xgmyMmQ4N-b6grMMDJQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/evangelos-ilias-a24979110/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="mailto:evangelos.ilias87@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                        </ul>
+                    </div>
+                </div>      
+    <div class="col-md-4">
+<div class="column2">
+    <h7>Address</h7>
+        <div class="content">
+            <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                    <span class="text">Manchester, Moston</span>       
+                        </div>
+                            <div class="phone">
+                                <span class="fas fa-phone-alt"></span>
+                                    <span class="text">+44 (0) 7928624707</span>       
+                                        </div>
+                                            <div class="email">
+                                                <span class="fas fa-envelope"></span>
+                                                <span class="text">info@welcometocrete.com</span>       
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                                      
+    <div class="overlay-container">
+        <span id='Points'>
+            </span>     
+                </div>
+                    <div class="col-md-4">
+                        <div class="column3">
+                            <h8>Contact us</h8>
+                                <div class="content">
+                                    <form action href="mailto:evangelos.ilias87@gmail.com">
+                                        <div class="email">
+                                            <div class="text">Email *</div>
+                                                <input type="email" required> 
+                                            </div>
+                                        <div class="msg">
+                                    <div class="text">Message *</div>
+                                <textarea rows="4" cols="40"></textarea>
+                            </div>
+                        <div class="btn">
+                    <button>Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        </div>
+
+        </footer>            
+        </body>
+        </html>
