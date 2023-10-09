@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # crete
 =======
 ## Discover the paradise 
@@ -29,4 +29,4 @@ VIsit Information
 ![](exampleImages/example_image7.png)
 
 
->>>>>>> bd22de6 (tourism attraction with web map application)
+
