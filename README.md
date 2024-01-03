@@ -27,7 +27,7 @@ Web Map
 Web Map
 ![](exampleImages/example_image6.png)
 
-VIsit Information
+Visit Information
 ![](exampleImages/example_image7.png)
 
 
